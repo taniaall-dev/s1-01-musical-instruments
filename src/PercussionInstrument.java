@@ -1,5 +1,10 @@
 public class PercussionInstrument extends Instrument {
 
+    // Static initialization block
+    static {
+        System.out.println("S'ha carregat la classe percussió");
+    }
+
     public PercussionInstrument (String name, double price){
         super(name, price);
     }
