@@ -39,19 +39,19 @@ La principal diferencia es cuándo y cuántas veces se ejecuta cada bloque:
 - Bloque estático (static): se ejecuta una sola vez cuando Java inicializa la clase por primera vez. No vuelve a
 ejecutarse al crear más objetos ni al acceder de nuevo a sus métodos estáticos.
 
-## 🛠 Technologíes
-- Lenguaje: Java
-- IDE: IntelliJ IDEA
-- Control de versiones: Git y GitHub
+## 🛠 Technologías
+- Java
+- IntelliJ IDEA
+- Git y GitHub
 
-## 🚀 Instalación y puesta en marcha
+## 🚀 Instalación y Ejecución
 1. Clonar el repositorio 
 2. Abrir el proyecto en IntelliJ IDEA
 3. Configurar un JDK compatible
 4. Ejecutar el programa desde Main
 
 ## 📸 Demo
-Not applicable at this stage.
+No aplicable a este ejercicio.
 
-## 🧩 Diagrams and justification of technical decisions 
-Not included at this stage.
+## 🧩 Diagramas y justificación de decisiones técnicas 
+No aplicable a este ejercicio.
