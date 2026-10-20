@@ -10,7 +10,7 @@ Desarrollar un programa Java para representar los instrumentos de un grupo de m�
 
 Todos los instrumentos comparte un nombre y un precio, y pueden sonar de diferentes maneras.
 
-Objetivos del ejercicio:
+**Objetivos del ejercicio:**
 
 - Aplicar la herencia y el polimorfismo en la programación orientada a objetos.
 - Comprender cómo se cargan las clases de Java durante la ejecución del programa.
@@ -28,30 +28,17 @@ Objetivos del ejercicio:
 
 ## 📚 Investigación: bloques de inicialización
 
-Un bloque de inicialización de instancia es un bloque de código que no utiliza la palabra clave static y que se ejecuta 
-cada vez que se crea un nuevo objeto de una clase, antes de que se ejecute el resto del constructor de esa clase.
+### Bloque de inicialización sin static
+- Es un bloque de código que sirve para inicializar atributos de una clase. Se escribe dentro de una clase entre llaves `{}`,
+  pero fuera de los métodos constructores y demás bloques.
 
-**Diferencias entre un bloque de inicialización de instancia y un bloque estático**
+- Puede utilizarse para inicializar atributos o ejecutar código que deba realizarse cada vez que se cree un objeto de esa clase.
+- Se ejecuta cada vez que se crea una nueva instancia de la clase, antes de que se ejecute el cuerpo del constructor.
 
-La principal diferencia es cuándo y cuántas veces se ejecuta cada bloque: 
+### Diferencia entre bloque de inicialización static y no static
+La diferencia principal es cuántas veces se ejecuta cada bloque y a qué pertenece.
+- Bloque `static { }` se ejecuta cuando se inicializa la clase, una vez por cargador de clases.
+- Bloque `sin static { }` se ejecuta cada vez que se inicializa una nueva instancia, antes del cuerpo del constructor.
 
-- Bloque de inicialización de instancia: se ejecuta cada vez que se crea un objeto de la clase.
-- Bloque estático (static): se ejecuta una sola vez cuando Java inicializa la clase por primera vez. No vuelve a
-ejecutarse al crear más objetos ni al acceder de nuevo a sus métodos estáticos.
-
-## 🛠 Technologías
-- Java
-- IntelliJ IDEA
-- Git y GitHub
-
-## 🚀 Instalación y Ejecución
-1. Clonar el repositorio 
-2. Abrir el proyecto en IntelliJ IDEA
-3. Configurar un JDK compatible
-4. Ejecutar el programa desde Main
-
-## 📸 Demo
-No aplicable a este ejercicio.
-
-## 🧩 Diagramas y justificación de decisiones técnicas 
-No aplicable a este ejercicio.
+**Importante:** los bloques static no se ejecutan cada vez que creas un objeto. Si la clase ya se ha inicializado, crear más
+objetos no vuelve a ejecutar sus bloques estáticos.
