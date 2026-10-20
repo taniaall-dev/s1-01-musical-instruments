@@ -18,6 +18,6 @@ public class WindInstrument extends Instrument{
     }
 
     public static void showMessage(){
-        System.out.println("Aquest és un missatge des d'un mètode estàtic ");
+        System.out.println("Aquest és un missatge del mètode estatic showMessage de la classe vent");
     }
 }
