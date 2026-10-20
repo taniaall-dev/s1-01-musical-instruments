@@ -1,7 +1,6 @@
 public class Main {
 
     public static void main (String[] args){
-        // Demonstrate class initialization through static member access
         WindInstrument.showMessage();
 
         PercussionInstrument percussionInstrument = new PercussionInstrument("Conga", 66.70);
